@@ -3,6 +3,6 @@ key = "TEST"
 [[link.rule]]
 url = "https://google.com/"
 permanent = false
-language = ["en"]
+#language = ["en"]
 #country = ["us"]
 password = "YODA"
