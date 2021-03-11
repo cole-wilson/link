@@ -6,7 +6,7 @@ except:
 	os.system('pip3 install toml')
 	import toml
 
-# redirect = {
+# redirects = {
 # 	[[redirects]]
 #   from = "/old-path"
 #   to = "/new-path"
@@ -61,14 +61,14 @@ for link in urls['link']:
 		if rule['password'] != False:
 			re.src = re.src + "/" + rule['password']
 
-		netlify['redirect'].append(re.todict())
+		netlify['redirects'].append(re.todict())
 
 		if rule['password'] != False:
 			rp = re
 			rp.__init__(key)
 			rp.status = 200
 			rp.dest = "/password.html"
-			netlify['redirect'].append(rp.todict())			
+			netlify['redirects'].append(rp.todict())			
 
 if os.path.isdir('build'):
 	shutil.rmtree('build')
