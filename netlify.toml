@@ -17,21 +17,21 @@ status = 301
 force = true
 
 # Link Shortener:
-[[redirect]]
+[[redirects]]
 from = "/TEST/YODA"
 to = "https://google.com/"
 status = 302
 force = true
 
-[redirect.conditions]
+[redirects.conditions]
 Language = [ "en",]
 Country = [ "us",]
-[[redirect]]
+[[redirects]]
 from = "/TEST"
 to = "/password.html"
 status = 200
 force = true
 
-[redirect.conditions]
+[redirects.conditions]
 Language = [ "en",]
 Country = [ "us",]
