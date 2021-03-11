@@ -1,0 +1,37 @@
+[build]
+base = "."
+publish = "build/"
+command = "python3 main.py"
+functions = "_functions/"
+
+
+[[headers]]
+for = "/*"
+[headers.values]
+X-Random = "The trash panda awakens..."
+
+[[redirects]]
+from = "/netlify.toml"
+to = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+status = 301
+force = true
+
+# Link Shortener:
+[[redirect]]
+from = "/TEST/YODA"
+to = "https://google.com/"
+status = 302
+force = true
+
+[redirect.conditions]
+Language = [ "en",]
+Country = [ "us",]
+[[redirect]]
+from = "/TEST"
+to = "/password.html"
+status = 200
+force = true
+
+[redirect.conditions]
+Language = [ "en",]
+Country = [ "us",]

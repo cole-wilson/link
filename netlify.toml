@@ -1,0 +1,19 @@
+[build]
+base = "."
+publish = "build/"
+command = "python3 main.py"
+functions = "_functions/"
+
+
+[[headers]]
+for = "/*"
+[headers.values]
+X-Random = "The trash panda awakens..."
+
+[[redirects]]
+from = "/netlify.toml"
+to = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+status = 301
+force = true
+
+# Link Shortener:
