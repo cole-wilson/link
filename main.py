@@ -77,5 +77,5 @@ shutil.copy('index.html','build/index.html')
 shutil.copy('password.html','build/password.html')
 shutil.copy('netlify.toml','build/netlify.toml')
 
-with open('build/netlify.toml', 'a') as file:
+with open('netlify.toml', 'a') as file:
 	file.write(toml.dumps(netlify))
