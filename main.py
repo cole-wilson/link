@@ -18,7 +18,7 @@ except:
 
 # }
 
-netlify = {'redirect':[]}
+netlify = {'redirects':[]}
 urls = toml.load('urls.toml')
 
 class Redirect:
