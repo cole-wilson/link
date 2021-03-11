@@ -4,5 +4,5 @@ key = "TEST"
 url = "https://google.com/"
 permanent = false
 language = ["en"]
-country = ["us"]
+#country = ["us"]
 password = "YODA"
