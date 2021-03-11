@@ -79,3 +79,6 @@ shutil.copy('netlify.toml','build/netlify.toml')
 
 with open('netlify.toml', 'a') as file:
 	file.write(toml.dumps(netlify))
+
+with open('build/netlify.toml', 'a') as file:
+	file.write(toml.dumps(netlify))
