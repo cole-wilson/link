@@ -1,6 +1,10 @@
-import toml
 import os
 import shutil
+try:
+	import toml
+except:
+	os.system('pip3 install toml')
+	import toml
 
 # redirect = {
 # 	[[redirects]]
